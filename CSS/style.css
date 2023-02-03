@@ -1922,7 +1922,7 @@ label .server i{
 }
 
 .courses .box img:last-of-type{
-  max-width: 100%;
+  width: 100%;
   border-radius: 6px 6px 0 0;
 }
 
