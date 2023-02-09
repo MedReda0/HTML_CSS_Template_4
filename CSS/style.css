@@ -2346,11 +2346,12 @@ label .server i{
 
 .plans .plan ul li span{
   font-size: 15px;
+  flex: 1;
 }
 
 .plans .plan ul li .fa-circle-info{
   color: var(--grey-color);
-  margin-left: auto;
+  cursor: pointer;
 }
 
 .plans .plan a{
@@ -2362,18 +2363,28 @@ label .server i{
   color: white;
   width: fit-content;
   margin: 20px auto 0;
+  border: 3px solid transparent;
+  transition: .3s;
 }
 
 .plans .plan.free a{
   background-color: var(--green-color);
 }
 
+.plans .plan.free a:hover{
+  color: var(--green-color);
+  border-color: inherit;
+  background-color: white;
+}
+
 .plans .plan.basic a{
   background-color: var(--blue-color);
 }
 
-.plans .plan.premium a{
-  background-color: var(--orange-color);
+.plans .plan.basic a:hover{
+  color: var(--blue-color);
+  border-color: inherit;
+  background-color: white;
 }
 
 .plans .plan .current{
