@@ -40,6 +40,7 @@ a{
 
 .box-span{
   display: block;
+  line-height: 1.5;
   font-size: 15px;
   color:#888;
   margin-bottom: 20px;
@@ -289,6 +290,7 @@ label .sp-toggle{
   position: relative;
   transition: .3s;
   cursor: pointer;
+  margin-left: 15px;
 }
 
 label .checkbox:checked ~ .sp-toggle{
@@ -1259,6 +1261,18 @@ label .checkbox:checked ~ .sp-radio::before{
   gap: 20px;
 }
 
+@media (max-width: 767px){
+  .settings{
+    grid-template-columns: minmax(250px,1fr);
+    gap: 10px;
+  }
+}
+
+.settings .sp-toggle{
+  top: 50%;
+  transform: translateY(-35%);
+}
+
 .site-control .control{
   display: flex;
   align-items: center;
@@ -1356,6 +1370,9 @@ label .checkbox:checked ~ .sp-radio::before{
 
 .security-info .box a{
   padding: 6px 10px;
+  top: 50%;
+  transform: translateY(-35%);
+  margin-left: 15px;
 }
 
 .social-info .box{
