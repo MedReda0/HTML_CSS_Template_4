@@ -531,10 +531,6 @@ label .checkbox:checked ~ .sp-radio::before{
   border: none;
   background-color: #eee;
   border-radius: 6px;
-}
-
-.draft input[type="text"]::placeholder,
-.draft textarea::placeholder{
   font-size: 13px;
 }
 
